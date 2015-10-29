@@ -34,4 +34,16 @@ class Fraccion
         Fraccion.new(numLocal,denLocal)
     end
     
+    
+    def ==(valor)
+        if((@num / @den) == (valor.num / valor.den))
+            true
+        else
+            false
+        end
+        
+    end
+    
+    
+    
 end
