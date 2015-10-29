@@ -9,6 +9,12 @@ class Fraccion
     def to_s
         "#{@num}/#{@den}"
     end
+    
+    def + (valor)
+        numLocal = (@num * valor.den) + (valor.num * @den)
+        denLocal = (@den * valor.den)
+        Fraccion.new(numLocal,denLocal)
+    end
 
     
 end
