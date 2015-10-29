@@ -28,5 +28,10 @@ class Fraccion
         Fraccion.new(numLocal,denLocal)
     end
     
+    def / (valor)
+        numLocal = (@num * valor.den)
+        denLocal = (@den * valor.num)
+        Fraccion.new(numLocal,denLocal)
+    end
     
 end

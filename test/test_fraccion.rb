@@ -12,6 +12,7 @@ class Testeador < Test::Unit::TestCase
         @funcion6 = @funcion4 + @funcion5
         @funcion7 = @funcion4 - @funcion5
         @funcion8 = @funcion4 * @funcion5
+        @funcion9 = @funcion4 / @funcion5
       
     end
  
@@ -25,7 +26,7 @@ class Testeador < Test::Unit::TestCase
         assert_equal(Fraccion.new(13,14).to_s,@funcion6.to_s)
         assert_equal(Fraccion.new(1,14).to_s,@funcion7.to_s)
         assert_equal(Fraccion.new(3,14).to_s,@funcion8.to_s)
-  
+        assert_equal(Fraccion.new(7,6).to_s,@funcion9.to_s)
     end
  
 end
